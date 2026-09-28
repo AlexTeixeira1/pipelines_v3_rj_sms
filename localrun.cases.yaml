@@ -3,6 +3,14 @@ cases:
   #  IVISA                       #
   ################################
 
+  # Flow mínimo — valida setup do Prefect sem I/O externo (sem Infisical, sem BigQuery)
+  - case_slug: "ivisa-hello-world"
+    flow_path: "pipelines.ivisa.hello_world.flows"
+    flow_name: "ivisa_hello_world"
+    params:
+      nome: "IVISA"
+      environment: "dev"
+
   # Descoberta de chamados 1746 das unidades IVISA (datario → COREVISA)
   # Pré-requisito: secrets /ivisa/COREVISA_URL e /ivisa/COREVISA_INGESTAO_LOTE_SECRET no Infisical
   - case_slug: "ivisa-1746-corevisa"

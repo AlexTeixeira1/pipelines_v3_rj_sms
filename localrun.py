@@ -2,7 +2,10 @@
 import importlib
 
 import yaml
+from dotenv import load_dotenv
 from prefect.testing.utilities import prefect_test_harness
+
+load_dotenv()
 
 
 def get_default_case_config(case_slug: str) -> dict:
