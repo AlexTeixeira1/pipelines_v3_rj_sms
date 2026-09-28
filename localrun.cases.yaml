@@ -36,6 +36,38 @@ cases:
       environment: "dev"
       janela_dias: 7
 
+  # SINAE — drena /solicitacoes (SOAP). Secret /ivisa/SINAE_TOKEN
+  - case_slug: "ivisa-sinae-corevisa"
+    flow_path: "pipelines.ivisa.sinae.flows"
+    flow_name: "ivisa_sinae_corevisa"
+    params:
+      environment: "dev"
+
+  # Harpya — varredura + laudo (login sem captcha). Secrets /ivisa/HARPYA_USERNAME|PASSWORD
+  - case_slug: "ivisa-harpya-corevisa"
+    flow_path: "pipelines.ivisa.harpya.flows"
+    flow_name: "ivisa_harpya_corevisa"
+    params:
+      environment: "dev"
+      dias_janela: 1
+
+  # SEI — descoberta web + enriquecimento gateway. Secrets /ivisa/SEI_*
+  - case_slug: "ivisa-sei-corevisa"
+    flow_path: "pipelines.ivisa.sei.flows"
+    flow_name: "ivisa_sei_corevisa"
+    params:
+      environment: "dev"
+      janela_dias: 3
+      max_paginas: 50
+
+  # GAL — varredura + PDF (cookie via Infisical, captcha manual). Secret /ivisa/GAL_SESSAO_COOKIE
+  - case_slug: "ivisa-gal-corevisa"
+    flow_path: "pipelines.ivisa.gal.flows"
+    flow_name: "ivisa_gal_corevisa"
+    params:
+      environment: "dev"
+      pagina_tamanho: 100
+
   ################################
   #  EXTRACT/LOAD                #
   ################################
