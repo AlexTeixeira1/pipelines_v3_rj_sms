@@ -1,5 +1,18 @@
 cases:
   ################################
+  #  IVISA                       #
+  ################################
+
+  # Descoberta de chamados 1746 das unidades IVISA (datario → COREVISA)
+  # Pré-requisito: secrets /ivisa/COREVISA_URL e /ivisa/COREVISA_INGESTAO_LOTE_SECRET no Infisical
+  - case_slug: "ivisa-1746-corevisa"
+    flow_path: "pipelines.ivisa.ingestao.chamado_1746.flows"
+    flow_name: "ivisa_1746_corevisa"
+    params:
+      environment: "dev"
+      janela_dias: 7
+
+  ################################
   #  EXTRACT/LOAD                #
   ################################
 
