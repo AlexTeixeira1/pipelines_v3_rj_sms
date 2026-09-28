@@ -3,11 +3,7 @@ from enum import Enum
 
 
 class constants(Enum):
-    # Secrets no Infisical — path /ivisa, a cadastrar antes do primeiro deploy
-    INFISICAL_PATH = "/ivisa"
-    INFISICAL_COREVISA_URL = "COREVISA_URL"
-    INFISICAL_COREVISA_LOTE_SECRET = "COREVISA_INGESTAO_LOTE_SECRET"
-
+    # Secrets COREVISA_URL/LOTE ficam no _shared (path /ivisa no Infisical)
     FONTE = "1746"
 
     # ID raiz do IVISA-RIO no datario (confirmado ao vivo 2026-09-23 via bq show)
@@ -26,6 +22,3 @@ class constants(Enum):
     DATARIO_PROJECT = "datario"
     DATARIO_DATASET = "adm_central_atendimento_1746"
     DATARIO_TABLE = "chamado"
-
-    # Máx de registros por POST /lote (limite conservador para o COREVISA)
-    LOTE_MAX = 500
