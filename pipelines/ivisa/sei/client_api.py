@@ -45,7 +45,7 @@ class SeiApiClient:
   async def __aenter__(self) -> SeiApiClient:
     if not self.configurada:
       raise SeiApiNaoConfigurada(
-        "SEI_API_SYSTEM_TOKEN/SEI_API_REQUESTER não configurados no Infisical /ivisa."
+        "SEI_API_SYSTEM_TOKEN/SEI_API_REQUESTER não configurados no Infisical /ivisa-rio."
       )
     self._client = httpx.AsyncClient(
       base_url=self.base_url,

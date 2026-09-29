@@ -29,9 +29,9 @@ import httpx
 from pipelines.utils.infisical import get_secret
 from pipelines.utils.logger import log
 
-INFISICAL_PATH = "/ivisa"
-SECRET_COREVISA_URL = "COREVISA_URL"
-SECRET_LOTE = "COREVISA_INGESTAO_LOTE_SECRET"
+INFISICAL_PATH = "/ivisa-rio"
+SECRET_COREVISA_URL = "COREVISA_BASE_URL"
+SECRET_LOTE = "INGESTAO_LOTE_SECRET"
 HTTP_TIMEOUT = 60.0
 LOTE_MAX = 500
 

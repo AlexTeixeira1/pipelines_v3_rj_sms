@@ -3,7 +3,7 @@
 
 ATENÇÃO: o login do GAL tem CAPTCHA humano por acesso — não é automatizável
 (ver decision seção 14.4). O cookie de sessão (PHPSESSID) é resolvido pelo
-operador localmente e gravado no Infisical /ivisa como GAL_SESSAO_COOKIE (JSON).
+operador localmente e gravado no Infisical /ivisa-rio como GAL_SESSAO_COOKIE (JSON).
 Este flow só REUSA o cookie; quando expira, falha com aviso claro e o operador
 renova o secret.
 """
@@ -14,7 +14,7 @@ from enum import Enum
 class constants(Enum):
   FONTE = "gal"
 
-  # Secret no Infisical /ivisa — JSON com os cookies de sessão, gravado pelo
+  # Secret no Infisical /ivisa-rio — JSON com os cookies de sessão, gravado pelo
   # operador após resolver o captcha localmente.
   SECRET_COOKIE = "GAL_SESSAO_COOKIE"
 

@@ -24,7 +24,7 @@ from .constants import constants as C
 from .discovery import DiscoveryWeb
 from .tipos import ProcessoDescoberto
 
-INFISICAL_PATH = "/ivisa"
+INFISICAL_PATH = "/ivisa-rio"
 
 
 def _secret(nome: str, environment: str) -> str:

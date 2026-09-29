@@ -113,7 +113,7 @@ class GalSessaoWeb:
     if not self.tem_cookie():
       raise GalSessaoExpirada(
         "Sem cookie de sessão. Renove o secret GAL_SESSAO_COOKIE no "
-        "Infisical /ivisa (resolva o captcha localmente)."
+        "Infisical /ivisa-rio (resolva o captcha localmente)."
       )
 
   async def lista_finais(

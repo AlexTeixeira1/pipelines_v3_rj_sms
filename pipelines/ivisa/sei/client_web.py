@@ -65,7 +65,7 @@ class SeiSessaoWeb:
   async def __aenter__(self) -> SeiSessaoWeb:
     if not self._usuario or not self._senha:
       raise SeiCredenciaisAusentes(
-        "SEI_USUARIO/SEI_SENHA não configurados no Infisical /ivisa."
+        "SEI_USUARIO/SEI_SENHA não configurados no Infisical /ivisa-rio."
       )
     self._client = httpx.AsyncClient(
       base_url=self.base_url,

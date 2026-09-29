@@ -20,7 +20,7 @@ from .client import HarpyaNaoEncontrado, HarpyaSessao
 from .constants import constants as C
 from .parser import normalizar_codigo_harpya
 
-INFISICAL_PATH = "/ivisa"
+INFISICAL_PATH = "/ivisa-rio"
 
 
 async def _varrer(dias_janela: int, environment: str) -> dict:

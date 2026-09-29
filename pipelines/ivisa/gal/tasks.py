@@ -25,7 +25,7 @@ from pipelines.utils.logger import log
 from .client import GalSessaoExpirada, GalSessaoWeb, GalWebError
 from .constants import constants as C
 
-INFISICAL_PATH = "/ivisa"
+INFISICAL_PATH = "/ivisa-rio"
 
 
 def _normalizar(texto: str) -> str:

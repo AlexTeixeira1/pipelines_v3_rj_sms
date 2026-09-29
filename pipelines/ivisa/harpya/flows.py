@@ -16,7 +16,7 @@ def ivisa_harpya_corevisa(environment: str = "dev", dias_janela: int = 1) -> dic
   cada amostra e posta o HTML cru em POST /v1/ingestao/harpya/lote.
 
   O COREVISA parseia o laudo. Secrets HARPYA_USERNAME/PASSWORD no Infisical
-  /ivisa. Login sem captcha — sessão renovada a cada run.
+  /ivisa-rio. Login sem captcha — sessão renovada a cada run.
   """
   return varrer_periodo(dias_janela=dias_janela, environment=environment)
 

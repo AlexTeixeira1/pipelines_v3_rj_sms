@@ -16,7 +16,7 @@ def ivisa_sinae_corevisa(environment: str = "dev") -> dict:
   Fazenda Estabelecimento (SOAP) e posta em POST /v1/ingestao/sinae/lote.
 
   Sem varredura — só responde ao que foi pedido. Secret SINAE_TOKEN no
-  Infisical /ivisa.
+  Infisical /ivisa-rio.
   """
   return drenar_solicitacoes(environment=environment)
 

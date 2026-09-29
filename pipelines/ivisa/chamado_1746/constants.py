@@ -3,7 +3,7 @@ from enum import Enum
 
 
 class constants(Enum):
-  # Secrets COREVISA_URL/LOTE ficam no _shared (path /ivisa no Infisical)
+  # Secrets COREVISA_URL/LOTE ficam no _shared (path /ivisa-rio no Infisical)
   FONTE = "1746"
 
   # ID raiz do IVISA-RIO no datario (confirmado ao vivo 2026-09-23 via bq show)

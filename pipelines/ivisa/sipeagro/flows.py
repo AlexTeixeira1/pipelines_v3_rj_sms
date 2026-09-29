@@ -16,7 +16,7 @@ def ivisa_sipeagro_corevisa(environment: str = "dev") -> dict:
   (UF/município) e posta um item por área em POST /v1/ingestao/sipeagro/lote.
 
   O COREVISA parseia e detecta quem sumiu dentro do recorte. Sem credencial:
-  fonte pública, só precisa dos secrets COREVISA_URL/LOTE no Infisical /ivisa.
+  fonte pública, só precisa dos secrets COREVISA_URL/LOTE no Infisical /ivisa-rio.
   """
   return montar_e_enviar(environment=environment)
 

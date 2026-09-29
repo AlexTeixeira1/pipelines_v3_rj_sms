@@ -19,7 +19,7 @@ def ivisa_sei_corevisa(
   POST /v1/ingestao/sei/lote.
 
   O COREVISA decide tem_ivisa e o ciclo de vida do processo. Secrets
-  SEI_USUARIO/SENHA/ORGAO + SEI_API_* no Infisical /ivisa.
+  SEI_USUARIO/SENHA/ORGAO + SEI_API_* no Infisical /ivisa-rio.
 
   ATENÇÃO: o login web headless precisa ser validado no ambiente Cloud Run
   (confirmar que não há captcha/2FA lá) antes de agendar em prod.

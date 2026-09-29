@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """Constantes do flow SEI.
 
-Secrets (usuário/senha web, token do gateway) vêm do Infisical /ivisa. Valores
+Secrets (usuário/senha web, token do gateway) vêm do Infisical /ivisa-rio. Valores
 públicos de comportamento (URLs, janelas, delays) ficam aqui.
 """
 
@@ -11,7 +11,7 @@ from enum import Enum
 class constants(Enum):
   FONTE = "sei"
 
-  # Secrets no Infisical /ivisa
+  # Secrets no Infisical /ivisa-rio
   SECRET_USUARIO = "SEI_USUARIO"
   SECRET_SENHA = "SEI_SENHA"
   SECRET_ORGAO = "SEI_ORGAO"
